@@ -1,6 +1,6 @@
 name: nanodart
 description: Tools for the NANO and BANANO cryptocurrencies including key generation, signing, encryption, and more.
-version: 2.0.0
+version: 2.0.1
 homepage: https://github.com/appditto/nanodart
 author: Appditto LLC <hello@appditto.com>
 
@@ -8,11 +8,14 @@ environment:
   sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
-  pointycastle: ^3.1.3
+  pointycastle: ^4.0.0
   hex: ^0.2.0
   convert: ^3.0.1
   fixnum_nanodart: ^1.0.0
-  bip39: ^1.0.6
+  bip39:
+    git:
+      url: https://github.com/cypherstack/stack-bip39.git
+      ref: 20bc8ca0bf0a30c6965977a26c41475a9e862020
 
 dev_dependencies:
   pedantic: ^1.11.1
